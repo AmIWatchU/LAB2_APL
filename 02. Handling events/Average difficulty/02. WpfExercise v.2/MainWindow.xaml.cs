@@ -33,11 +33,11 @@ namespace _02._WpfExercise_v._2
             string password = txtPass.Text;
             if (login.Length <= 2)
             {
-                MessageBox.Show("Введіть логін(більше 2 букв)");
+                MessageBox.Show("ENTER LOGIN!");
             }
             else if (password.Length <= 2)
             {
-                MessageBox.Show("Введіть пароль(більше 2 букв)");
+                MessageBox.Show("ENTER PASSWORD!");
             }
             else
             {
@@ -45,20 +45,18 @@ namespace _02._WpfExercise_v._2
                 {
                     if (password == "admin")
                     {
-                        MessageBox.Show("Ви успішно увійшли");
+                        MessageBox.Show("Welcome back! ");
                     }
                     else
                     {
-                        MessageBox.Show("Неправильний пароль", "Error");
+                        MessageBox.Show("Wrong Password! Try again! ", "Error");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Неправильний логін", "Error");
+                    MessageBox.Show("Wrong Login! Try again! ", "Error");
                 }
             }
-
-            MessageBox.Show("Welcome " + Login.ToUpper() + "  " + password.ToString() + " Password", "Order confirmation");
         }
     }
 }
