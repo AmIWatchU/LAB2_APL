@@ -25,43 +25,40 @@ namespace _02._WpfExercise_v._2
             InitializeComponent();
         }
 
-        private void btnOrder_Click(object sender, RoutedEventArgs e)
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
 
             // get the name of the drink
-            string DrinkName = txtDrink.Text;
-
-            // if no drink ordered, display message
-            if (DrinkName.Length == 0)
+            string login = txtLog.Text;
+            string password = txtPass.Text;
+            if (login.Length <= 2)
             {
-                MessageBox.Show("No drink ordered");
-                txtDrink.Focus();
-                return;
+                MessageBox.Show("Введіть логін(більше 2 букв)");
+            }
+            else if (password.Length <= 2)
+            {
+                MessageBox.Show("Введіть пароль(більше 2 букв)");
+            }
+            else
+            {
+                if (login == "admin")
+                {
+                    if (password == "admin")
+                    {
+                        MessageBox.Show("Ви успішно увійшли");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Неправильний пароль", "Error");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Неправильний логін", "Error");
+                }
             }
 
-            // how many sugars
-            int Sugars;
-
-            // try converting input sugars to integer
-            try
-            {
-                Sugars = Convert.ToInt32(txtSugars.Text);
-            }
-            catch
-            {
-                Sugars = -1;
-            }
-
-            // if no sugars ordered, display message
-            if (Sugars == -1)
-            {
-                MessageBox.Show("You haven't ordered any sugars");
-                txtSugars.Focus();
-                return;
-            }
-
-            // finally, display order
-            MessageBox.Show("You have ordered a " + DrinkName.ToUpper() + " with " + Sugars.ToString() + " sugars", "Order confirmation");
+            MessageBox.Show("Welcome " + Login.ToUpper() + "  " + password.ToString() + " Password", "Order confirmation");
         }
     }
 }

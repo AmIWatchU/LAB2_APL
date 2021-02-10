@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_02._WpfExercise_v._2"
         mc:Ignorable="d"
-        Title="Order your drink" SizeToContent="WidthAndHeight" 
+        Title="Some Site" SizeToContent="WidthAndHeight" 
         WindowStartupLocation="CenterScreen">
 
-    <StackPanel Orientation="Vertical">
+    <StackPanel Orientation="Vertical" Background="#FF99DDDC">
         <Grid Width="180" Margin="20">
 
             <Grid.ColumnDefinitions>
@@ -24,20 +24,20 @@
 
             <!-- the title spans 2 columns at top -->
             <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" 
-                Background="Lavender" BorderBrush="Black" BorderThickness="1" Content="Order your drink" FontWeight="Bold"
+                Background="Lavender" BorderBrush="Black" BorderThickness="1" Content="Sing In" FontWeight="Bold"
                 HorizontalContentAlignment="Center" />
 
             <!-- the form labels -->
-            <Label Grid.Row="2" Grid.Column="0" Content="Drink:" HorizontalContentAlignment="Right" FontStyle="Italic" />
-            <Label Grid.Row="3" Grid.Column="0" Content="Sugars:" HorizontalContentAlignment="Right" FontStyle="Italic" />
+            <Label Grid.Row="2" Grid.Column="0" Content="Login:" HorizontalContentAlignment="Right" FontStyle="Italic" />
+            <Label Grid.Row="3" Grid.Column="0" Content="Password:" HorizontalContentAlignment="Right" FontStyle="Italic" />
 
             <!-- the text boxes for the form -->
-            <TextBox Name="txtDrink" Grid.Row="2" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Width="100" HorizontalAlignment="Left" Margin="5" />
-            <TextBox Name="txtSugars" Grid.Row="3" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Width="50" HorizontalAlignment="Left" Margin="5" />
+            <TextBox Name="txtLog" Grid.Row="2" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Width="100" HorizontalAlignment="Left" Margin="5" />
+            <TextBox Name="txtPass" Grid.Row="3" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Width="100" HorizontalAlignment="Left" Margin="5" />
 
         </Grid>
 
-        <Button Name="btnOrder" HorizontalContentAlignment="Center" Margin="0,0,0,20" Content="Place order" HorizontalAlignment="Center" Click="btnOrder_Click" />
+        <Button Name="btnLogin" HorizontalContentAlignment="Center" Margin="0,0,0,20" Content="Log in" HorizontalAlignment="Center" Click="btnOrder_Click" />
     </StackPanel>
 
 

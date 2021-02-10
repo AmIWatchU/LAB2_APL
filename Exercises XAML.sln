@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Handling events", "02. Handling events", "{18C8923B-98DE-41A2-86E8-30B0376EB1C8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Relatively easy", "02. Relatively easy", "{FEB727F5-7124-4833-99C4-920509189FE2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ex1", "Ex1", "{FEB727F5-7124-4833-99C4-920509189FE2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Harder than average", "02. Harder than average", "{85DA03A1-5079-4118-9AAD-1EA07C74E98E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ex2", "Ex2", "{85DA03A1-5079-4118-9AAD-1EA07C74E98E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Average difficulty", "02. Average difficulty", "{AEEA7D0D-D66D-4FD3-97AC-426577F36E17}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ex3", "Ex3", "{AEEA7D0D-D66D-4FD3-97AC-426577F36E17}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. WpfExercise v.1", "02. Handling events\Relatively easy\02. WpfExercise v.1\02. WpfExercise v.1.csproj", "{B73615BD-F426-4AD4-8FAA-5B11275F1E74}"
 EndProject
