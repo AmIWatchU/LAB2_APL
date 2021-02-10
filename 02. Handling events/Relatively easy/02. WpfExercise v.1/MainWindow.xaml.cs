@@ -37,7 +37,7 @@ namespace _02._WpfExercise_v._1
             }
 
             // otherwise, display name
-            MessageBox.Show("Welcome, " + txtName.Text);
+            MessageBox.Show("Welcome, " + txtName.Text + " from " + txtGroup.Text + " !");
 
         }
 

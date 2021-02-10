@@ -8,7 +8,7 @@
         Title="Arithmetic" SizeToContent="WidthAndHeight"
         WindowStartupLocation="CenterScreen">
 
-    <StackPanel Orientation="Vertical">
+    <StackPanel Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" >
         <Border BorderBrush="Black" BorderThickness="1" Margin="20">
             <Grid Width="250" Margin="0">
 
@@ -26,17 +26,79 @@
                 <Label Grid.Row="1" Grid.Column="0" Content="Choose second number:" HorizontalContentAlignment="Right" FontStyle="Italic" />
 
                 <!-- the text boxes for the form -->
-                <TextBox Name="txtNumber1" Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Width="50" HorizontalAlignment="Left" Margin="5" />
-                <TextBox Name="txtNumber2" Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Width="50" HorizontalAlignment="Left" Margin="5" />
+                <TextBox Name="txtNumber1" Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Width="50" HorizontalAlignment="Left" Margin="5" SelectionTextBrush="#FFEBE6E6" SelectionBrush="#FF1268BD" />
+                <TextBox Name="txtNumber2" Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Width="50" HorizontalAlignment="Left" Margin="5" SelectionTextBrush="#FFEBE6E6" SelectionBrush="#FF1268BD" />
 
             </Grid>
         </Border>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20,0,0,20">
-            <Button Name="btnAdd" Margin="0,0,20,0" Content="+" Width="30" Click="btnOperator" />
-            <Button Name="btnSubtract" Margin="0,0,20,0" Content="-" Width="30" Click="btnOperator" />
-            <Button Name="btnMultiply" Margin="0,0,20,0" Content="X" Width="30" Click="btnOperator" />
-            <Button Name="btnDivide" Margin="0,0,20,0" Content="/" Width="30" Click="btnOperator" />
+            <Button Name="btnAdd" Margin="0,0,20,0" Content="+" Width="30" Click="btnOperator" Background="#FFD6DA68">
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF260AB1" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <Button Name="btnSubtract" Margin="0,0,20,0" Content="-" Width="30" Click="btnOperator" Background="#FFD6DA68">
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF260AB1" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <Button Name="btnMultiply" Margin="0,0,20,0" Content="X" Width="30" Click="btnOperator" Background="#FFD6DA68">
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF260AB1" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <Button Name="btnDivide" Margin="0,0,20,0" Content="/" Width="30" Click="btnOperator" Background="#FFD6DA68">
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF260AB1" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20,0,0,20">
+            <Button Name="btnRoot" Margin="0,0,20,0" Content="√" Width="30" Click="btnOperator" Background="#FFD6DA68" >
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF0E10BA" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <Button Name="btnDegree" Margin="0,0,20,0" Content="^" Width="30" Click="btnOperator" Background="#FFD6DA68" >
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF0E10BA" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <Button Name="btnMod" Margin="0,0,20,0" Content="mod" Width="30" Click="btnOperator" Background="#FFD6DA68" >
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF0E10BA" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <Button Name="btnLog" Margin="0,0,20,0" Content="log" Width="30" Click="btnOperator" Background="#FFD6DA68" >
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF0E10BA" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
         </StackPanel>
 
         <Label Content="Hidden initially" Width="200" Height="30" Background="Lavender" BorderBrush="Black" BorderThickness="1"

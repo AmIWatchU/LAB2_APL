@@ -57,6 +57,19 @@ namespace _02._WpfExercise_v._3
                 case "divide":
                     answer = n1 / n2;
                     break;
+                case "root":
+                    answer = n1 / (1 / n2);
+                    break;
+                case "degree":
+                    answer = n1 / (1 / n2);
+                    break;
+                case "mod":
+                    answer = n1 / (1 / n2);
+                    break;
+                case "log":
+                    answer = n1 / (1 / n2);
+                    break;
+
             }
 
             lblAnswer.Content = "The answer is " + answer.ToString("#,##0.00");
