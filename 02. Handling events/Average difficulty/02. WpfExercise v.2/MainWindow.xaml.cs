@@ -30,12 +30,12 @@ namespace _02._WpfExercise_v._2
 
             // get the name of the drink
             string login = txtLog.Text;
-            string password = txtPass.Text;
-            if (login.Length <= 2)
+            string password = txtPass.Password;
+            if (login.Length <= 1)
             {
                 MessageBox.Show("ENTER LOGIN!");
             }
-            else if (password.Length <= 2)
+            else if (password.Length <= 1)
             {
                 MessageBox.Show("ENTER PASSWORD!");
             }
