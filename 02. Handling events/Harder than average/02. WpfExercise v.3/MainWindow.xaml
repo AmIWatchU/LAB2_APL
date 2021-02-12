@@ -67,15 +67,14 @@
             </Button>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20,0,0,20">
-            <Button Name="btnRoot" Margin="0,0,20,0" Content="√" Width="30" Click="btnOperator" Background="#FFD6DA68" >
-                <Button.BorderBrush>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="#FF0E10BA" Offset="1"/>
-                    </LinearGradientBrush>
-                </Button.BorderBrush>
+            <Button Name="btnRoot" Margin="0,0,20,0"  Width="30" Click="btnOperator" Background="#FFD6DA68" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="a" FontSize="8" VerticalAlignment="Top"></TextBlock>
+                    <TextBlock Text="√b"></TextBlock>
+                </StackPanel>
+
             </Button>
-            <Button Name="btnDegree" Margin="0,0,20,0" Content="^" Width="30" Click="btnOperator" Background="#FFD6DA68" >
+            <Button Name="btnDegree" Margin="0,0,20,0" Content="a^b" Width="30" Click="btnOperator" Background="#FFD6DA68" >
                 <Button.BorderBrush>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black"/>
@@ -91,7 +90,13 @@
                     </LinearGradientBrush>
                 </Button.BorderBrush>
             </Button>
-            <Button Name="btnLog" Margin="0,0,20,0" Content="log" Width="30" Click="btnOperator" Background="#FFD6DA68" >
+            <Button Name="btnLog" Margin="0,0,20,0"  Width="30" Click="btnOperator" Background="#FFD6DA68" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="log" FontSize="10" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="a" FontSize="8" VerticalAlignment="Bottom"></TextBlock>
+                    <TextBlock Text="b"></TextBlock>
+                </StackPanel>
+
                 <Button.BorderBrush>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black"/>
