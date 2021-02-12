@@ -70,7 +70,9 @@
             <Button Name="btnRoot" Margin="0,0,20,0"  Width="30" Click="btnOperator" Background="#FFD6DA68" >
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="a" FontSize="8" VerticalAlignment="Top"></TextBlock>
-                    <TextBlock Text="√b"></TextBlock>
+                    <TextBlock Text="√"></TextBlock>
+                    <TextBlock Text="__" VerticalAlignment="Top" Margin="-1.9,-10,-2, 0" HorizontalAlignment="Left" ></TextBlock>
+                    <TextBlock Text="b" FontSize="8" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="-6,3,-2, 0"></TextBlock>
                 </StackPanel>
 
             </Button>
