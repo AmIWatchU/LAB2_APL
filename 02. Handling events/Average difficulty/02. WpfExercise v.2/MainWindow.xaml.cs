@@ -53,6 +53,8 @@ namespace _02._WpfExercise_v._2
                 {
                     log_nope.Visibility = Visibility.Hidden;
                     log_ok.Visibility = Visibility.Visible;
+
+
                     if (password == "admin")
                     {
                         pass_nope.Visibility = Visibility.Hidden;
@@ -63,9 +65,10 @@ namespace _02._WpfExercise_v._2
                     }
                     else
                     {
-                        MessageBox.Show("Wrong Password! Try again! ", "Error");
                         pass_nope.Visibility = Visibility.Visible;
                         pass_ok.Visibility = Visibility.Hidden;
+                        MessageBox.Show("Wrong Password! Try again! ", "Error");
+                        
                     }
                 }
                 else
@@ -73,6 +76,8 @@ namespace _02._WpfExercise_v._2
                     MessageBox.Show("Wrong Login! Try again! ", "Error");
                     log_nope.Visibility = Visibility.Visible;
                     log_ok.Visibility = Visibility.Hidden;
+                    pass_nope.Visibility = Visibility.Visible;
+                    pass_ok.Visibility = Visibility.Hidden;
 
                 }
             }

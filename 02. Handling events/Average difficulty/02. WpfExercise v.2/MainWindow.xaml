@@ -36,9 +36,9 @@
             <TextBox Name="txtLog" Grid.Row="2" Grid.Column="1" BorderBrush="Black" BorderThickness="1"  HorizontalAlignment="Stretch" Margin="5" />
             <PasswordBox Name="txtPass" Grid.Row="3" Grid.Column="1" BorderBrush="Black" BorderThickness="1"  HorizontalAlignment="Stretch" Margin="5" />
             <Image Name="log_ok" Source="Res/okey.png" Height="25" Width="25" Grid.Row="2" Grid.Column="3" Visibility="Hidden"/>
-            <Image Name="log_nope" Source="Res/Failure.png" Height="25" Width="25" Grid.Row="2" Grid.Column="3" Visibility="Hidden"/>
+            <Image Name="log_nope" Source="Res/Failure.png" Height="25" Width="25" Grid.Row="2" Grid.Column="3" Visibility="Visible"/>
             <Image Name="pass_ok" Source="Res/okey.png" Height="25" Width="25" Grid.Row="3" Grid.Column="4" Visibility="Hidden"/>
-            <Image Name="pass_nope" Source="Res/Failure.png" Height="25" Width="25" Grid.Row="3" Grid.Column="4" Visibility="Hidden"/>
+            <Image Name="pass_nope" Source="Res/Failure.png" Height="25" Width="25" Grid.Row="3" Grid.Column="4" Visibility="Visible"/>
         </Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20,0,0,20">
             <Button x:Name="btnLogin" HorizontalContentAlignment="Center" Content="Log in" Click="btnLogin_Click" />
